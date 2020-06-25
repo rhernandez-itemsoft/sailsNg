@@ -1,26 +1,48 @@
-# testsails
+# SailsJs 1.2.4 + Angular 10
 
-a [Sails v1](https://sailsjs.com) application
++ [Sails v1](https://sailsjs.com)
++ [Angular 10](https://angular.io/)
 
-
-### Links
-
-+ [Sails framework documentation](https://sailsjs.com/get-started)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
-
-
-### Version info
-
-This app was originally generated on Wed Jun 24 2020 22:35:53 GMT-0500 (GMT-05:00) using Sails v1.2.4.
-
-<!-- Internally, Sails used [`sails-generate@1.17.2`](https://github.com/balderdashy/sails-generate/tree/v1.17.2/lib/core-generators/new). -->
-
+### Descripción
+  Integración de SailsJs con Angular.
+  - La carpeta de trabajo de angular es "src"
+  - La carpeta de salida de angular es "assets". Se reemplazaron todos los archivos que existian y que pertenecian a SailsJS, si por alguna razon necesitas tener a "angular" bajo una ruta en específico debes modificar lo siguiente:
+  - tsconfig.base.json: 
+  - ...... compilerOptions->outDir 
+  - ...... compilerOptions->baseUrl
+  - angular.json: 
+  - ...... projects->ngtest->architect->build->options->outputPath
+  - ...... projects->ngtest->root
+  - views/layout/layout.ejs
+  - ...... &lt;base href="/"&gt;
+  
 
 
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
 
+
+### > ng version
+-----------------------------------------------------------
+- Angular CLI: 10.0.0
+- Node: 12.18.1
+- OS: win32 x64
+-----------------------------------------------------------
+- Angular: 10.0.0
+- ... animations, cli, common, compiler, compiler-cli, core, forms
+- ... platform-browser, platform-browser-dynamic, router
+- Ivy Workspace: Yes
+
+-----------------------------------------------------------
+- Package                           Version
+-----------------------------------------------------------
+- @angular-devkit/architect         0.1000.0
+- @angular-devkit/build-angular     0.1000.0
+- @angular-devkit/build-optimizer   0.1000.0
+- @angular-devkit/build-webpack     0.1000.0
+- @angular-devkit/core              10.0.0
+- @angular-devkit/schematics        10.0.0
+- @ngtools/webpack                  10.0.0
+- @schematics/angular               10.0.0
+- @schematics/update                0.1000.0
+- rxjs                              6.5.5
+- typescript                        3.9.5
+- webpack                           4.43.0
