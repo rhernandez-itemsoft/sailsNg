@@ -3,7 +3,7 @@
 + [Sails v1](https://sailsjs.com)
 + [Angular 10](https://angular.io/)
 
-### Descripción
+## Descripción
   Integración de SailsJs con Angular.
   - La carpeta de trabajo de angular es "src"
   - La carpeta de salida de angular es "assets". Se reemplazaron todos los archivos que existian y que pertenecian a SailsJS, si por alguna razon necesitas tener a "angular" bajo una ruta en específico debes modificar lo siguiente:
@@ -17,32 +17,22 @@
   - ...... &lt;base href="/"&gt;
   
 
+## instalación
+Dentro de la carpeta raíz ejecuta
+- npm install 
+
+## Ejecución
+ ### ng build --watch    
+- Con está instrucción compilas tus archivos de Angular que se encuentran en la carpeta "src" y ante cualquier cambio que hagas se compilará de nuevo, de tal manera que podrás ver los cambios en el front.
++ [Más información](https://angular.io/cli/build)
 
 
+ ### sails lift
+- Levanta la aplicación, por default tiene establecido el puerto 1337
++ [Más información](https://sailsjs.com/documentation/reference/application/advanced-usage/sails-lift)
 
-### > ng version
+## ng version
 -----------------------------------------------------------
 - Angular CLI: 10.0.0
 - Node: 12.18.1
 - OS: win32 x64
------------------------------------------------------------
-- Angular: 10.0.0
-- ... animations, cli, common, compiler, compiler-cli, core, forms
-- ... platform-browser, platform-browser-dynamic, router
-- Ivy Workspace: Yes
-
------------------------------------------------------------
-- Package                           Version
------------------------------------------------------------
-- @angular-devkit/architect         0.1000.0
-- @angular-devkit/build-angular     0.1000.0
-- @angular-devkit/build-optimizer   0.1000.0
-- @angular-devkit/build-webpack     0.1000.0
-- @angular-devkit/core              10.0.0
-- @angular-devkit/schematics        10.0.0
-- @ngtools/webpack                  10.0.0
-- @schematics/angular               10.0.0
-- @schematics/update                0.1000.0
-- rxjs                              6.5.5
-- typescript                        3.9.5
-- webpack                           4.43.0
